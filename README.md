@@ -1,1 +1,1 @@
-# Vector-Quantized-Variational-AutoEncoder-VQ-VAE-
+# Vector-Quantized-Variational-AutoEncoder-(VQ-VAE)
