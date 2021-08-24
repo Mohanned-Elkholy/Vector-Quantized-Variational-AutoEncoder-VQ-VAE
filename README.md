@@ -17,6 +17,8 @@ In this model, the sampling layer is rather discretized. To further illustrate t
 The sampling layer chooses the closest embedding vector. In other words, it uses the argmin function. Unfortunately, this is not differentiable, and so, the gradients can't move to the encoder. This challenge is overcome by copying the gradients at the beginning of the decoder to the end of the encoder (skip the embedding space). 
 ![image](https://user-images.githubusercontent.com/47930821/130603643-1cdffa28-4d2b-4b76-9d69-73de7c2abe17.png)
 
+--- 
+
 On the other hand, the embedding space would be better if it is close to the encoder output to avoid unexpected divergence in the reconstruction. Therefore, another term should be added to the loss function.
 
 ![image](https://user-images.githubusercontent.com/47930821/130603862-345648b0-df02-4564-b0bf-166646ade86b.png)
