@@ -41,14 +41,15 @@ Usually Beta is set to 0.25 according to the paper.
 ![image](https://user-images.githubusercontent.com/47930821/135889941-006d80fe-d5b0-45d7-81f1-090c60b9299c.png)
 
 
-# Install dependencies
-In this repo, a pretrained biggan in a specified library
-```python
-pip install torch torchvision matplotlib lpips numpy nltk cv2 pytorch-pretrained-biggan
-```
 # Training
-#provide image to work on
+Run this script on a colab notebook to start the inversion. (GPU is required).
 ```python
-python train.py  --num_epochs 2000 --learning_rate 0.007 
+!pip install argparse
+!git clone https://github.com/Mohanned-Elkholy/Vector-Quantized-Variational-AutoEncoder-VQ-VAE
+%cd /content/Vector-Quantized-Variational-AutoEncoder-VQ-VAE
+!python main.py --num_embeddings 100 --embedding_dim 64 --commitment_cost 0.25
 ```
+You can also run the colab notebook provided in the repo, or you can open this link: https://colab.research.google.com/drive/1FH54YW1MjKmaE7mxQjvkrwl6VM8PfQLx?usp=sharing.
+
 ---
+
