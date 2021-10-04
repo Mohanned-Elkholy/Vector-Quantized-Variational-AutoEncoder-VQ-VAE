@@ -36,6 +36,11 @@ Usually Beta is set to 0.25 according to the paper.
 
 ---
 
+# Results
+
+![image](https://user-images.githubusercontent.com/47930821/135889941-006d80fe-d5b0-45d7-81f1-090c60b9299c.png)
+
+
 # Install dependencies
 In this repo, a pretrained biggan in a specified library
 ```python
